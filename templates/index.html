@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Cover Letter Generator</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="cv_file">Upload CV (Text File):</label>
+            <input type="file" name="cv_file" id="cv_file" accept=".txt" required>
+            <br>
+            <label for="job_description_file">Upload Job Description (Text File):</label>
+            <input type="file" name="job_description_file" id="job_description_file" accept=".txt" required>
+            <br>
+            <button type="submit">Generate Cover Letter</button>
+        </form>
+    </div>
+</body>
+</html>
